@@ -1,0 +1,18 @@
+MakeBatteryImage.java は、AndroidのICSまたはJellyBeansの標準のバッテリー
+インジケータアイコンに、パーセント数字を追加して100段階にする際の大量の
+画像生成を行うときに作った汎用性とかやる気が全くないプログラムです。
+
+orgimage/ ディレクトリに、ICS/JellyBeans標準の下記ファイルを置いてある状態で、
+-----
+stat_sys_battery_0.png   stat_sys_battery_charge_anim0.png
+stat_sys_battery_100.png stat_sys_battery_charge_anim100.png
+stat_sys_battery_15.png  stat_sys_battery_charge_anim15.png
+stat_sys_battery_28.png  stat_sys_battery_charge_anim28.png
+stat_sys_battery_43.png  stat_sys_battery_charge_anim43.png
+stat_sys_battery_57.png  stat_sys_battery_charge_anim57.png
+stat_sys_battery_71.png  stat_sys_battery_charge_anim71.png
+stat_sys_battery_85.png  stat_sys_battery_charge_anim85.png
+-----
+java MakeBatteryImage orgimage
+を実行するとカレントディレクトリに大量の画像ファイルが生成されます。
+
